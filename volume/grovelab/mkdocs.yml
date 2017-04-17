@@ -1,0 +1,4 @@
+site_name: Grovelab
+pages:
+    - 'Introduction': 'index.md'
+    - 'Linux Commands': 'Linux_Commands.md'
