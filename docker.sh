@@ -1,17 +1,20 @@
 #!/bin/bash
 
-if [ "$1" == "start" ]
+if [ "$1" == "new" ]
 then
-    docker run --rm -it -p 8000:8000 -v /Users/admin/Study/Docker/infinitetutts/mkdocs-grovelab/volume/grovelab:/usr/share/mkdocs/grovelab infinitetutts/alpine-mkdocs:1.0
+  docker run --rm -it -p 8000:8000 -v $(pwd)/volume/:/usr/share/mkdocs/grovelab infinitetutts/mkdocs:latest new grovelab
+elif [ "$1" == "start" ]
+then
+  docker run --rm -it -p 8000:8000 -v $(pwd)/volume/grovelab:/usr/share/mkdocs/grovelab/ infinitetutts/mkdocs:latest
   elif [ "$1" == "build" ]
 then
-    docker run --rm -it -v /Users/admin/Study/Docker/infinitetutts/mkdocs-grovelab/volume/grovelab:/usr/share/mkdocs/grovelab infinitetutts/alpine-mkdocs:1.0 build
-elif [ "$1" == "gh-deploy" ]
+  docker run --rm -it -v $(pwd)/volume/grovelab:/usr/share/mkdocs/grovelab/ infinitetutts/mkdocs:latest build
+elif [ "$1" == "gh-deploy" ] # Dont know if this works
 then
-    docker run --rm -it -v /Users/admin/Study/Docker/infinitetutts/mkdocs-grovelab/volume/grovelab:/usr/share/mkdocs/grovelab infinitetutts/alpine-mkdocs:1.0 gh-deploy
+  docker run --rm -it -v $(pwd)/volume/grovelab:/usr/share/mkdocs/grovelab/grovelab infinitetutts/alpine:latest gh-deploy
 elif [ "$1" == "stop" ]
 then
     echo "Coming soon :P"
 else 
-    echo "Usage: ./docker.sh start, build, gh-deploy or stop"
+    echo "Usage: ./docker.sh new, start, build, gh-deploy or stop"
 fi

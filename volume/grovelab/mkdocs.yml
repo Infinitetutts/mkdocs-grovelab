@@ -1,4 +1,16 @@
 site_name: Grovelab
 pages:
-    - 'Introduction': 'index.md'
-    - 'Linux Commands': 'Linux_Commands.md'
+- Home: 'index.md'
+- Linux Sysadmin: 'linux-sysadmin.md'
+- Linux Commands: 'linux-commands.md'
+- String Manipulation: 'string-manipulation.md'
+- MySQL : 'mysql.md'
+- Apache : 'apache.md'
+- Docker : 'docker.md'
+- Git : 'git.md'
+- Vim : 'vim.md'
+- Linux Desktop : 'linux-desktop.md'
+- MacOS : 'macos.md'
+- Understanding opensource tools : 'understanding-opensouce-tools.md'
+
+theme: readthedocs

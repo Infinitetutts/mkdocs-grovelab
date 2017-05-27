@@ -1,4 +1,0 @@
-cat
-less
-vim
-nano
