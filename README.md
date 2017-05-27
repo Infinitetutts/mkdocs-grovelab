@@ -5,6 +5,7 @@
 * Build docker images locally
 
 `cd base-image && docker build -t infinitetutts/alpine-python:3.5.3 .` 
+
 `cd ../ && docker build -t infinitetutts/mkdocs:latest .`
 
 * Start server
@@ -29,6 +30,7 @@ Wait 3 seconds for new files to copy
 `cp ./volume/grovelab/site/* /someplace/grovelab/`
 
 * Check for new updates
+`cd /someplace/grovelab/`
 `git pull`
 
 * Commit new code !
