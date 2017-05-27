@@ -15,7 +15,7 @@
 `./volume/grovelab/docs/*`
 `./volume/grovelab/mkdocs.yml`
 
-***Always do a `git pull` before editing `grovelab-mkdocs`!`***
+***Always do a `git pull` before editing `grovelab-mkdocs`!***
 
 ### Upload to web
 
@@ -36,5 +36,5 @@ Wait 3 seconds for new files to copy
 
 If there are new updates revisited `mkdocs-grovelab` repo do a `git pull` and fix commit conflict
 
-* Commit new code !
+* Commit new code 
 `git push`
