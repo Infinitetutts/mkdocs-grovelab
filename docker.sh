@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ "$1" == "new" ]
+if [ "$1" == "new" ] #Create a new project
 then
   docker run --rm -it -p 8000:8000 -v $(pwd)/volume/:/usr/share/mkdocs/grovelab infinitetutts/mkdocs:latest new grovelab
-elif [ "$1" == "start" ]
+elif [ "$1" == "start" ] # Start the live-reloading docs server
 then
   docker run --rm -it -p 8000:8000 -v $(pwd)/volume/grovelab:/usr/share/mkdocs/grovelab/ infinitetutts/mkdocs:latest
-  elif [ "$1" == "build" ]
+  elif [ "$1" == "build" ] # Build the site
 then
   docker run --rm -it -v $(pwd)/volume/grovelab:/usr/share/mkdocs/grovelab/ infinitetutts/mkdocs:latest build
 elif [ "$1" == "gh-deploy" ] # Dont know if this works
