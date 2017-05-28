@@ -1,4 +1,5 @@
-## Checking logs, IpTables, Apache, Wordpress logins
+## DDOS Mitigation Process
+### Working with Logs, IpTables, Apache, Wordpress logins
 
 **Look at top IP addresses in your access log use:**
 ```bash
@@ -73,13 +74,6 @@ iptables -A INPUT -s 192.168.1.1 -j DROP/REJECT
 service iptables restart 
 service iptables save 
 sudo service apache2 restart  
-```
-
-
-### Backup all changed config files
-
-```bash
-debsums -ce | tar --files-from=- -cf configs.tar 
 ```
 
 

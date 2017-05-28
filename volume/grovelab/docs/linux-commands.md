@@ -45,6 +45,10 @@ The -i option of cp command means that you will be asked whether to overwrite a 
 find /tmp -type f -empty -delete
 ```
 
+**Find and replace string**
+```bash
+find . -type f -name "gamemode_comp*" -exec sed -i 's/123/dfg/g' {} + 
+```
 
 ## Listening on Ports, Traffic Network connections
 
@@ -102,6 +106,11 @@ free -h
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla http://www.kossboss.com 
 ```
 
+## Backup all changed config files
+
+```bash
+debsums -ce | tar --files-from=- -cf configs.tar 
+```
 
 ## Download maps from csgo web server
 
