@@ -3,7 +3,8 @@ pages:
 - Home: 'index.md'
 - Linux Sysadmin: 'linux-sysadmin.md'
 - Linux Commands: 'linux-commands.md'
-- Text (awk sed grep etc ): 'string-manipulation.md'
+- Linux Tools Commands: 'linuxtools-commands.md'
+- Text (awk sed grep etc ): 'text.md'
 - MySQL : 'mysql.md'
 - Apache : 'apache.md'
 - Docker : 'docker.md'
@@ -11,6 +12,6 @@ pages:
 - Vim : 'vim.md'
 - Linux Desktop : 'linux-desktop.md'
 - MacOS : 'macos.md'
-- Understanding opensource tools : 'understanding-opensouce-tools.md'
+- Linux Tools and Terms : 'opensouce-tools-and-terms.md'
 
 theme: readthedocs

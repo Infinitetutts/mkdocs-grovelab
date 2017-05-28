@@ -1,11 +1,13 @@
 # Welcome to Grovelab 
 
-DevOps and Linux SysAdmin Wiki
+### DevOps, SysAdmin and Linux Wiki <3
 
 
-## Commands
+**Found any errors? Submit a pull request !**  
+[Raw Files](https://github.com/Infinitetutts/mkdocs-grovelab/tree/master/volume/grovelab/docs)  
+*Files are conveniently in mark down language*
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+
+**If you would contribute more**  
+Setup the development enviroment: 
+[mkdocs-grovelab](https://github.com/Infinitetutts/mkdocs-grovelab)
