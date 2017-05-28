@@ -3,7 +3,7 @@ pages:
 - Home: 'index.md'
 - Linux Sysadmin: 'linux-sysadmin.md'
 - Linux Commands: 'linux-commands.md'
-- String Manipulation: 'string-manipulation.md'
+- Text (awk sed grep etc ): 'string-manipulation.md'
 - MySQL : 'mysql.md'
 - Apache : 'apache.md'
 - Docker : 'docker.md'
