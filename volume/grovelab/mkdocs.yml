@@ -7,11 +7,10 @@ pages:
 - Text (awk sed grep etc ): 'text.md'
 - MySQL : 'mysql.md'
 - Apache : 'apache.md'
-- Docker : 'docker.md'
 - Git : 'git.md'
-- Vim : 'vim.md'
 - Linux Desktop : 'linux-desktop.md'
 - MacOS : 'macos.md'
 - Linux Tools and Terms : 'opensouce-tools-and-terms.md'
+- RHCE: 'rhce.md'
 
 theme: readthedocs

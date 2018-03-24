@@ -19,24 +19,31 @@
 
 ### Upload to web
 
-* Build to website (Builds static site
+* Build to website (Builds static site)
+
 `./docker.sh build`
 
 * Run server
+
 `./docker.sh start`
 *Wait 3 seconds for new files to copy from container to localhost*
 
 * Git clone `grovelab`
+
 `cd /someplace/ && git clone https://github.com/Infinitetutts/grovelab`
 
-* Copy website to `grovelab` repo
+* Remove and copy website to `grovelab` repo
+
+`rm -r /someplace/grovelab/*`
 `cp ~/yourpath/mkdocks-grove/volume/grovelab/site/* /someplace/grovelab/`
 
 * Check for new updates
+
 `cd /someplace/grovelab/`
 `git pull`
 
 *If there are new updates revisited `mkdocs-grovelab` repo do a `git pull` and fix commit conflict*
 
 * Commit new code 
+
 `git push`
