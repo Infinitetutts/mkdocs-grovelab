@@ -32,13 +32,15 @@
 
 * Remove and copy website to `grovelab` repo
 
-***Dont remove the `Readme.md` file***
+***Dont remove the `README.md` file***
+
+`cp /someplace/grovelab/README.md /tmp/`
 
 `rm -r /someplace/grovelab/*`
 
-`cp ~/yourpath/mkdocks-grove/volume/grovelab/site/* /someplace/grovelab/`
+`cp /tmp/README.md /someplace/grovelab/`
 
-*If there are new updates revisited `mkdocs-grovelab` repo do a `git pull` and fix commit conflict*
+`cp ~/yourpath/mkdocks-grove/volume/grovelab/site/* /someplace/grovelab/`
 
 * Commit new code 
 
