@@ -15,7 +15,10 @@
 `./volume/grovelab/docs/*`
 `./volume/grovelab/mkdocs.yml`
 
-***Always do a `git pull` before editing `grovelab-mkdocs`!***
+
+***Always do a `git pull` before editing `grovelab-mkdocs`***
+
+
 
 ### Upload to web
 
@@ -23,24 +26,17 @@
 
 `./docker.sh build`
 
-* Run server
-
-`./docker.sh start`
-*Wait 3 seconds for new files to copy from container to localhost*
-
 * Git clone `grovelab`
 
 `cd /someplace/ && git clone https://github.com/Infinitetutts/grovelab`
 
 * Remove and copy website to `grovelab` repo
 
+***Dont remove the `Readme.md` file***
+
 `rm -r /someplace/grovelab/*`
+
 `cp ~/yourpath/mkdocks-grove/volume/grovelab/site/* /someplace/grovelab/`
-
-* Check for new updates
-
-`cd /someplace/grovelab/`
-`git pull`
 
 *If there are new updates revisited `mkdocs-grovelab` repo do a `git pull` and fix commit conflict*
 
