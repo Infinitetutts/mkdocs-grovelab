@@ -184,7 +184,7 @@ This is a non-destructive operation and will not free any dirty objects. Use of 
 “sync” only makes dirty cache to clean cache. cache is still preserved. drop_caches doesn’t touch dirty caches and only drops clean caches. So to make all memory free, it is necessary to do sync first before drop_caches in case flushing daemons hasn’t written the changes to disk.
 
 
-## WikiMedia PHP mail function
+## Easy SMTP Server Setup
 
 ```bash
 sudo apt-get install sendmail 

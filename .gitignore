@@ -1,8 +1,4 @@
 *.swp
 *.swo
+.DS_Store
 volume/grovelab/site/
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml

@@ -1,16 +1,20 @@
 site_name: Grovelab
 pages:
 - Home: 'index.md'
-- Linux Sysadmin: 'linux-sysadmin.md'
-- Linux Commands: 'linux-commands.md'
-- Linux Tools Commands: 'linuxtools-commands.md'
+- Linux sysadmin: 'linux-sysadmin.md'
+- Linux commands: 'linux-commands.md'
+- Linux tools commands: 'linuxtools-commands.md'
 - Text (awk sed grep etc ): 'text.md'
 - MySQL : 'mysql.md'
 - Apache : 'apache.md'
 - Git : 'git.md'
-- Linux Desktop : 'linux-desktop.md'
+- Linux desktop : 'linux-desktop.md'
 - MacOS : 'macos.md'
-- Linux Tools and Terms : 'opensouce-tools-and-terms.md'
-- RHCE: 'rhce.md'
+- RHCE: 
+  - Resources: 'RHCE/resources.md'
+  - Useful commands: 'RHCE/useful-cmds.md'
+  - Networking: 'RHCE/networking.md'
+  - firewall-cmd: 'RHCE/firewall-cmd.md'
+  - Client auth with kerberos & ldap: 'RHCE/client-auth-kerb-ldap.md'
 
 theme: readthedocs
