@@ -2,9 +2,9 @@
 
 ### DevOps, SysAdmin and Linux Wiki <3
 
-**Found any errors? Submit a pull request !**  
+**Found any errors? Submit a pull request**  
 [Raw Files](https://github.com/Infinitetutts/mkdocs-grovelab/tree/master/volume/grovelab/docs)  
-*Files are conveniently in mark down language*
+*Update mark down language files*
 
 
 **If you would like contribute more**  

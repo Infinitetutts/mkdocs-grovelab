@@ -17,4 +17,17 @@ pages:
   - firewall-cmd: 'RHCE/firewall-cmd.md'
   - Client auth with kerberos & ldap: 'RHCE/client-auth-kerb-ldap.md'
 
+#theme: windmill
+#theme: material
 theme: readthedocs
+
+#Broken themes (To many pages):
+#theme: cinder
+#theme: bootstrap
+#theme: windmill-dark
+# Theme bootswatch:
+#theme: yeti
+#or
+#theme: amelia
+#extra:
+    #theme_inverse: true

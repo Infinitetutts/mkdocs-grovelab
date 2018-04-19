@@ -1,9 +1,13 @@
 FROM infinitetutts/alpine-python:3.5.3
 MAINTAINER infinitetutts
 
+# Install mkdocs
 RUN pip install mkdocs && \
     mkdir /usr/share/mkdocs && \
     chown -R python:python /usr/share/mkdocs
+
+# Install themes
+RUN pip install mkdocs-material mkdocs-windmill-dark mkdocs-bootstrap mkdocs-bootswatch mkdocs-windmill mkdocs-cinder
 
 WORKDIR /usr/share/mkdocs
 USER python
