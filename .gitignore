@@ -2,3 +2,4 @@
 *.swo
 .DS_Store
 volume/grovelab/site/
+deploy.sh
