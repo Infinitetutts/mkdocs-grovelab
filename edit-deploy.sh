@@ -1,7 +1,12 @@
 #!/bin/bash
 
-PROD_DIR=
-DEV_DIR=
+#------------------------------------------
+# Edit this file and save as "deploy.sh"
+# As that file is ignored during commits
+#------------------------------------------
+
+PROD_DIR=""
+DEV_DIR=""
 
 bash $DEV_DIR/docker.sh build
 
