@@ -10,12 +10,12 @@
 --- 
 
 **Install packages**
-```
+```bash
 yum install nss-pam-ldapd pam_krb5
 ```
 
 **Configure authentication**
-```
+```bash
 authconfig-tui
 ```
 ```
@@ -32,22 +32,27 @@ Realm: EXAMPLE.COM
 ```
 
 **Copy the certificate**
-```
+```bash
 scp root@ipa.example.com:/root/cacert.p12 /etc/openldap/cacerts/
 ```
 
-**Uncomment the line "#tls_reqcert never" from nslcd.conf**
-```
+**Uncomment "#tls_reqcert never" from nslcd.conf**
+```bash
 vim /etc/nslcd.conf
+```
+```
+# Use StartTLS without verifying the server certificate.
+#ssl start_tls
+tls_reqcert never
 ```
 
 **Apply settings**
-```
+```bash
 systemctl restart nslcd
 ```
 
 **Test if authentication is working**
-```
+```bash
 getent passwd ldapuser1
 su - ldapuser1
 ```
