@@ -18,6 +18,7 @@ pages:
   - firewall-cmd: 'RHCE/firewall-cmd.md'
   - Client auth with kerberos & ldap: 'RHCE/client-auth-kerb-ldap.md'
   - iSCSI Target and Initiator: 'RHCE/iscsi.md'
+  - Kerborized NFS: 'RHCE/nfs.md'
 
 #theme: windmill
 #theme: material
